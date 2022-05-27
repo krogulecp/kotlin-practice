@@ -1,0 +1,16 @@
+# Intellij Idea project files
+.idea
+*.iml
+*.ipr
+*.iws
+
+# gradle config
+.gradle
+
+# project binaries
+build
+out
+classes
+
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
