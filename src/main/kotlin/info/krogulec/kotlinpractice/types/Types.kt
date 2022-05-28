@@ -1,22 +1,39 @@
 package info.krogulec.kotlinpractice.types
 
 fun main(){
+    Types().createStrings()
 }
 
 class Types {
-    fun createFloatings(){
-        //TODO
+
+    fun createInts() {
+        val a: Long = 200
+
+        println(a.javaClass.simpleName)
     }
 
-    fun createChars(){
-        //TODO
+    fun createFloatings() {
+        val d = 10.55f
+
+        println(d.javaClass.simpleName)
     }
 
-    fun createStrings(){
-        //TODO
+    fun createChars() {
+        println('U')
     }
 
-    fun createArrays(){
-        //TODO
+    fun createStrings() {
+        val str = "jakaś wartość"
+        val rawString = """
+            tutaj wrzucamy całe teksty
+            jeśli jest taka potrzeba. Możemy dodawać ""
+            $str
+        """.trimIndent()
+
+        println(rawString)
+    }
+
+    fun createArrays() {
+        val arr = arrayOf(1, 2, 3)
     }
 }

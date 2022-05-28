@@ -2,7 +2,19 @@ package info.krogulec.kotlinpractice.loops
 
 class WhileLoopIterate {
     fun returnAllResultsInSingleList(phrase: String): List<String>{
-        TODO()
+        val returnList = mutableListOf<String>()
+        var pageNumber = 0
+
+        do {
+            val result: ResultsPage = GoogleSearchClient().search(phrase, pageNumber)
+
+            returnList.addAll(result.results)
+            pageNumber++
+
+        } while (!result.isLast)
+
+        return returnList
+
     }
 }
 

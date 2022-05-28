@@ -1,9 +1,15 @@
 package info.krogulec.kotlinpractice.types
 
 fun main(){
-    //TODO
+    val firstValue = OperatorsOverloading(10)
+    val secondValue = OperatorsOverloading(5)
+    val sum = firstValue + secondValue
+
+    println(sum.value)
 }
 
 class OperatorsOverloading(val value: Int) {
-    //TODO operator fun plus()
+    operator fun plus(toAdd: OperatorsOverloading): OperatorsOverloading {
+        return OperatorsOverloading(toAdd.value + this.value)
+    }
 }
