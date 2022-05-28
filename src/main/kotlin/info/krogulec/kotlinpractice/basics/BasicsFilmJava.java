@@ -9,10 +9,6 @@ public class BasicsFilmJava {
     private boolean isPlaying = false;
     private List<BasicsFilmJava> sequels = List.of();
 
-    public static void main(String[] args) {
-
-    }
-
     BasicsFilmJava(String title, int year) {
         this.title = title;
         this.year = year;

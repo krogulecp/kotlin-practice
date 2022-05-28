@@ -3,12 +3,21 @@ package info.krogulec.kotlinpractice.basics
 fun main(args: Array<String>) {
 }
 
-open class BasicsFilm {
+open class BasicsFilm(val title: String, private val year: Int) {
+    var available: Boolean = true
+    private var isPlaying: Boolean = false
+    private val sequels: MutableList<BasicsFilm> = mutableListOf()
 
-}
+    fun play() {
+        if (available) {
+            isPlaying = true
+            println("playing $title")
+        }
+    }
 
-class BasicsFilmDerived : BasicsFilm() {
-
+    fun addSequels(vararg sequelsToAdd: BasicsFilm) {
+        sequels.addAll(sequelsToAdd)
+    }
 }
 
 class BasicsExample(
