@@ -20,17 +20,20 @@
     - indentacja
     - jeśli parametry metody nie mieszczą się w jednej linii stosujemy linię dla parametru
 5. Kolejność słów kluczowych (https://kotlinlang.org/docs/coding-conventions.html#modifiers-order)
-![img.png](img.png)
+   ![img.png](img.png)
 6. Adnotacje
-   - umieszczamy przed modyfikatorami
-   - adnotacje bez argumentów mogą być umieszczone obok siebie
-   - opcja umieszczenia adnotacji bezargumentowej w tej samej linii co adnotowana wartość
+    - umieszczamy przed modyfikatorami
+    - adnotacje bez argumentów mogą być umieszczone obok siebie
+    - opcja umieszczenia adnotacji bezargumentowej w tej samej linii co adnotowana wartość
+
+********************
+
 7. Metody
-   - jeśli parametry metody nie mieszczą się w jednej linii, umieszczamy każdy osobno (podobnie jak w klasach)
+    - jeśli parametry metody nie mieszczą się w jednej linii, umieszczamy każdy osobno (podobnie jak w klasach)
 8. Właściwości klasy
-   - dla krótkich konstrukcji typu read-only umieszczamy wszystko w jednej linii
-   - kiedy inicjalizujemy wartość dajemy nową linię po operatorze przypisania
-![img_2.png](img_2.png)
+    - dla krótkich konstrukcji typu read-only umieszczamy wszystko w jednej linii
+    - kiedy inicjalizujemy wartość dajemy nową linię po operatorze przypisania
+      ![img_2.png](img_2.png)
 9. Indentacja
 10. Wywołanie metod
     - Jeśli jest dużo argumentów, grupujemy je tematycznie i umieszczamy te grupy w oddzielnych liniach
