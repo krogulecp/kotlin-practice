@@ -28,20 +28,31 @@
     - poziomy dostępu
     - domyślne zablokowanie dziedziczenia
 6. Komentarze
-    - komentarze jednolinijkowe
-    - komentarze blokowe
-    - zagnieżdżone komentarze blokowe
+   - komentarze jednolinijkowe
+   - komentarze blokowe
+   - zagnieżdżone komentarze blokowe
 7. String templates
-    - wykorzystanie pojedynczej zmiennej
-    - wywołanie metody
-
+   - wykorzystanie pojedynczej zmiennej
+   - wywołanie metody
 
 ### ***
+
 ZADANIE:
+
+1. Przepisać klasę BasicsFilmJava na kotlina
+
+### ***
+
+### ***
+
+ZADANIE:
+
 1. Utworzyć klasę w Kotlinie `FootballPlayer`
 2. Klasa ma mieć niemutowalne parametry name oraz born date (ustawiane podczas tworzenia obiektu)
 3. Klasa ma mieć mutowalny parametr club oraz goals scored
 4. Klasa ma mieć metodę, która pozwoli na dodawanie strzelonych goli
 5. Klasa ma mieć metodę, która pozwoli na ustawienie klubu
-6. Z zewnątrz ma być dostępne name, goals i club, ale data urodzenia nie ma być dostępna -> w zamian mamy zwracać wiek piłkarza
+6. Z zewnątrz ma być dostępne name, goals i club, ale data urodzenia nie ma być dostępna -> w zamian mamy zwracać wiek
+   piłkarza
+
 ### ***
