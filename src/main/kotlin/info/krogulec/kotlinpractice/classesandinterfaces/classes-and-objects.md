@@ -26,15 +26,6 @@ PRZYKŁAD:
 ### Klasy abstrakcyjne
 1. Deklarujemy je za pomocą słówka `abstract`
 
-### Companion objects
-1. Singleton tworzony na potrzeby klasy, w której jest deklarowany
-2. Zaspokaja potrzeby realizowane przez static, ale w bardziej obiektowy sposób
-
-### ***
-PRZYKŁAD:
-1. Companion object w klasie
-### ***
-
 ### Interfejsy
 1. Definiujemy wykorzystując słówko kluczowe `interface`
 2. Możemy deklarować metody abstrakcyjne, jak również z domyślną implementacją
