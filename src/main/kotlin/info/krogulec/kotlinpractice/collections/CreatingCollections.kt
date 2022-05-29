@@ -1,15 +1,39 @@
 package info.krogulec.kotlinpractice.collections
 
+fun main() {
+    CreatingCollections().iterateOverLists()
+}
+
 class CreatingCollections {
 
     // PRZYKŁAD 1
-    fun nullsInCollection(){
-        TODO()
+    fun nullsInCollection() {
+        val list = listOf<String?>(null, null, null, null)
+        println("nulls in list $list")
+
+        val set = setOf<String?>(null, null, null, null)
+        println("nulls in set $set")
+
+        val map = mapOf<String?, String>(
+            null to "1",
+            null to "2",
+            null to "3",
+        )
+        println("nulls in map $map")
+
+        val listInterfered = listOf(1, 2, 3L)
     }
 
     // PRZYKŁAD 2
-    fun mutatingInCopiedList(){
-        TODO()
+    fun mutatingInCopiedList() {
+        var rambo = Film("Rambo", 1982)
+        val firstList = listOf(rambo)
+        val copiedList = firstList.toList()
+        println("first list: $firstList -- copied list: $copiedList")
+        rambo.title = "Rambo2"
+        println("first list: $firstList -- copied list: $copiedList")
+
+        val mutable = mutableListOf<Int>().toList()
     }
 
     //PRZYKŁAD 3
@@ -21,8 +45,15 @@ class CreatingCollections {
     }
 
     //PRZYKŁAD 4
-    fun iterateOverLists(){
-        TODO()
+    fun iterateOverLists() {
+        val ints = listOf(1, 2, 3, 4, 5, 6, 7)
+        var iterator = ints.listIterator()
+        while (iterator.hasNext()) {
+            println(iterator.next())
+        }
+        while (iterator.hasPrevious()) {
+            println(iterator.previous())
+        }
     }
 
     //PRZYKŁAD 5
@@ -31,8 +62,16 @@ class CreatingCollections {
     }
 
     // ZADANIE 1
-    fun removeOldFilms(): List<Film>{
-        TODO()
+    fun removeOldFilms(): List<Film> {
+        val mutableFilms = films.toMutableList()
+        val iterator = mutableFilms.listIterator()
+        while (iterator.hasNext()) {
+            val film = iterator.next()
+            if (film.year < 1990) {
+                iterator.remove()
+            }
+        }
+        return mutableFilms
     }
 
     // ZADANIE 2
