@@ -37,6 +37,7 @@ PRZYKŁAD:
 
 ### ***
 ZADANIE:
-1. Utworzyć interfejs `Borrowable` z metodą abstrakcyjną `borrow()` oraz `return()` i z domyślną metodą `canBeBorrowed()` + property borrowed
+1. Utworzyć interfejs `Borrowable` z metodą abstrakcyjną `borrow()` oraz `returnItem()` i z domyślną
+   metodą `canBeBorrowed()` + property borrowed
 2. Utworzyć klasę `Film`, która będzie implementowała ten interfejs
 ### ***
