@@ -8,7 +8,7 @@ class NullSafety(private val random: Random = Random()) {
         TODO()
     }
 
-    private fun makeDrink(drinkName: String): Drink{
+    private fun makeDrink(drinkName: String): Drink {
         return Drink(drinkName)
     }
 
@@ -18,3 +18,16 @@ class NullSafety(private val random: Random = Random()) {
 }
 
 data class Drink(val drinkName: String)
+
+
+class NullSafetyExample {
+
+    fun test(value: String?): String {
+        return value ?: handleNullValue()
+    }
+
+    fun handleNullValue(): String {
+        // możemy coś zalogować lub wykonać inny kod
+        return ""
+    }
+}
