@@ -70,7 +70,7 @@ interface MyInterface {
 }
 
 class SomeClassImplementingInterface : MyInterface {
-    override val propToImplement = "mm property implementation"
+    override val propToImplement = ""
 
     override fun toImplement(): Int {
         TODO("Not yet implemented")
