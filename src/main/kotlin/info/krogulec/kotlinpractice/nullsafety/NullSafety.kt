@@ -5,7 +5,8 @@ import java.util.Random
 class NullSafety(private val random: Random = Random()) {
 
     fun prepareRandomDrink(): Drink{
-        TODO()
+        val drinkName = pickValue() ?: DEFAULT_DRINK_NAME
+        return makeDrink(drinkName)
     }
 
     private fun makeDrink(drinkName: String): Drink {
@@ -14,6 +15,10 @@ class NullSafety(private val random: Random = Random()) {
 
     private fun pickValue(): String? {
         return listOf("coffee", "tea", "juice").getOrNull(random.nextInt(10))
+    }
+
+    companion object {
+        private const val DEFAULT_DRINK_NAME = "water"
     }
 }
 
