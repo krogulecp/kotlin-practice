@@ -29,10 +29,23 @@ class Types {
     }
 
     fun createStrings() {
-        //TODO
+        val str = ""
+        val anotherStr = "some msg $str"
+        val multilineString = """
+            line
+            line
+            line
+            line
+            line
+            line
+            line
+            line
+            line
+        """.trimIndent()
     }
 
-    fun createArrays(){
-        //TODO
+    fun createArrays() {
+        val myArr = arrayOf(1)
+        val list = listOf("")
     }
 }
