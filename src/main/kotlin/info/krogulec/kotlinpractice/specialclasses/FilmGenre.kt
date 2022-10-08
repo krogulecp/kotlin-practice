@@ -1,10 +1,14 @@
 package info.krogulec.kotlinpractice.specialclasses
 
-enum class FilmGenre {
+enum class FilmGenre : Playable {
     COMEDY,
     HORROR,
     THRILLER,
-    ANIME
+    ANIME;
+
+    override fun play() {
+        println("Playing $name")
+    }
 }
 
 interface Playable {
