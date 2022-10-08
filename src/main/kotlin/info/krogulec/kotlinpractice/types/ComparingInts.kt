@@ -15,10 +15,16 @@ class ComparingInts {
     }
 
     fun compareBiggerIntsReferences(){
-        //TODO
+        val a = 1000
+        val boxed: Int? = a
+        val otherBoxed: Int? = a
+        println("Compare small ints ${boxed === otherBoxed}")
     }
 
-    fun compareBoxedIntsValues(){
-        //TODO
+    fun compareBoxedIntsValues() {
+        val a = 1000
+        val boxed: Int? = a
+        val otherBoxed: Int? = a
+        println("Compare small ints ${boxed == otherBoxed}")
     }
 }
