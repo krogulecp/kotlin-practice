@@ -3,13 +3,13 @@ package info.krogulec.kotlinpractice.basics
 fun main() {
     val basicFilm = BasicsFilm("Rambo", 1984)
     basicFilm.addSequels(BasicsFilm("Rambo 2", 1990))
-    println(basicFilm.sequels)
+    println(basicFilm.sequels())
 }
 
 class BasicsFilm(val title: String, private val year: Int) {
     var available = true
     private var isPlaying = false
-    val sequels = mutableListOf<BasicsFilm>()
+    private var sequels: MutableList<BasicsFilm> = mutableListOf()
 
     fun play() {
         if (available) {
@@ -20,6 +20,10 @@ class BasicsFilm(val title: String, private val year: Int) {
 
     fun addSequels(vararg sequelsToAdd: BasicsFilm) {
         sequels.addAll(sequelsToAdd)
+    }
+
+    fun sequels(): List<BasicsFilm> {
+        return sequels.toList()
     }
 
     override fun toString(): String {
