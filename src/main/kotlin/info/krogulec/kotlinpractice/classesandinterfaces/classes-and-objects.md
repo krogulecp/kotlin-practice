@@ -40,7 +40,6 @@ PRZYKŁAD:
 2. Możemy deklarować metody abstrakcyjne, jak również z domyślną implementacją
 3. Implementujemy poprzez znak `:`
 4. Musimy zaimplementować wszystkie abstrakcyjne metody
-5. Możemy też deklarować properties w ramach interfejsów (zarówno abstrakcyjne, jak również z implementacją)
 6. Interfejsy mogą implementować inne interfejsy
 7. Implementacja z wykorzystaniem słówka kluczowego `override`
 

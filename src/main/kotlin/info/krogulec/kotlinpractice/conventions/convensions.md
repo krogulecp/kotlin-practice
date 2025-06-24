@@ -43,6 +43,7 @@
 13. Komentarze (javadoc)
     - krótkie umieszczamy w jednej linii
     - długie umieszczamy w ten sposób:
+    
     ![img_1.png](img_1.png)
 14. Unikamy zbędnych konstrukcji
     - zwracany typ Unit
@@ -56,5 +57,6 @@
       - zwracana wartość nie zmieni się jeśli stan obiektu się nie zmieni
 16. Mniejsza potrzeba stosowania wzorca Builder (przekazywanie nazwanych argumentów)
 17. Wyrażenia lambda
+
 ![img_3.png](img_3.png)
 ![img_4.png](img_4.png)
