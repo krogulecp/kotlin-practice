@@ -1,5 +1,6 @@
 ## Delegacja
 Pattern, który jest alternatywą dla dziedziczenia
+
 ![img.png](img.png)
 
 1. Przechowywany wewnętrznie obiekt będzie realizował metody kierowane do `Derived`

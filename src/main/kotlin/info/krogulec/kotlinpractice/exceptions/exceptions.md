@@ -9,6 +9,4 @@
 ### ***
 ZADANIE:
 1. W klasie `Exceptions.kt` napisać metodę, która wypisze wszystkie numery pesel z pliku `resources/pesel.txt` (hint można skorzystać z prywatnej metody `getResourcePath(fileName: String)`)
-2. Stworzyć nowy plik `ExceptionsJava` i w nim zaimplementować to samo.
-3. Jakie mamy różnice?
 ### ***
